@@ -19,7 +19,6 @@ işçilər adında cədvəlimiz olacaq. Sütun olaraq ad,maaş,
 departament olacaq. Siz isə departamentinin adı satış olan 
 və maaşı 600-dən çox olan şəxslərin maaşını azalan sıra ilə sıralıyın
 
-
 --CREATE TABLE Isciler( isci_ad VARCHAR2(20), isci_maas INTEGER, isci_department VARCHAR2(25) );
 
 --INSERT INTO Isciler values('Hesen',700,'Satis');
@@ -29,3 +28,20 @@ və maaşı 600-dən çox olan şəxslərin maaşını azalan sıra ilə sıral�
 --INSERT INTO Isciler values('Kazim',780,'Satis');
 
 --SELECT * FROM Isciler WHERE isci_department ='Satis' AND isci_maas > 600 ORDER BY isci_maas  DESC;
+
+
+task3:
+kitablar cədvəlimiz olacaq. Sütunları: adı, janrı, nəşr ili .2015-dən sonra nəşr olunmuş 
+kitbaabları janrına görə artan sıra ilə sıralıyın
+
+--CREATE TABLE Kitablar( kitab_ad VARCHAR2(20), kitab_janr VARCHAR2(20), kitab_il INTEGER);
+
+--INSERT INTO Kitablar VALUES('Eli ve Nino','psikoloji',2013);
+--INSERT INTO Kitablar VALUES( 'Cinayet ve Ceza','klassika',2017);
+--INSERT INTO Kitablar VALUES('Donusum','psikoloji',2019);
+--INSERT INTO Kitablar VALUES('Icimizdeki Seytan','psikoloji',2020);
+--INSERT INTO Kitablar VALUES('Qirmizi ve Qara','klassika',2021);
+--INSERT INTO Kitablar VALUES( 'Sefiller','klassika',2012);
+
+
+SELECT kitab_janr, COUNT(kitab_janr) AS "Sayi" FROM Kitablar WHERE kitab_il > 2015 GROUP BY kitab_janr ORDER BY 'Sayi' ;
