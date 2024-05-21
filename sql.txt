@@ -45,3 +45,18 @@ kitbaabları janrına görə artan sıra ilə sıralıyın
 
 
 SELECT kitab_janr, COUNT(kitab_janr) AS "Sayi" FROM Kitablar WHERE kitab_il > 2015 GROUP BY kitab_janr ORDER BY 'Sayi' ;
+
+task4:
+filmlər adlı cədvəlimiz olacaq. Sütunları : ad, çıxış tarixi,
+ratinq. Çıxış tarixi 2000-dən kiçik olanları artan sıra və 
+ratingi 7-dən böyük olanları azalan sıra ilə sıralıyın.
+
+--CREATE TABLE Filmler (film_ad VARCHAR2(30),film_cixis_tarix INTEGER, film_rating FLOAT);
+
+--INSERT INTO Filmler VALUES('The God Of Father',1972, 9.2);
+--INSERT INTO Filmler VALUES('Gece Yolcusu',2014, 6.2);
+--INSERT INTO Filmler VALUES('The Inception',2010, 8.8);
+--INSERT INTO Filmler VALUES('The Dune:Part Two',2024, 8.6);
+--INSERT INTO filmler2 VALUES('The Parasite',2019, 8.5);
+
+--SELECT * FROM Filmler WHERE film_cixis_tarix <2000 or film_rating >7 ORDER BY film_cixis_tarix ASC, film_rating DESC
