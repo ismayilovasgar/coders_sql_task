@@ -1,4 +1,4 @@
-task1)
+task1:
 İlk olaraq satışı reallaşmış məhsullar üçün bir cədvəl (tabel) 
 yaradırıq və bu cədvəlimizin sütun olaraq məhsul idsi, sayı və
 dəyəri (1 dənəsinin)  olacaq. Biz isə hər məhsul 
@@ -12,3 +12,20 @@ dəyəri (1 dənəsinin)  olacaq. Biz isə hər məhsul
 
 --SELECT * FROM Mehsullar;
 --SELECT m.*, (m.mehsul_sayi * m.mehsul_deyeri) AS "Qazanc" FROM Mehsullar m;
+
+
+task2:
+işçilər adında cədvəlimiz olacaq. Sütun olaraq ad,maaş,
+departament olacaq. Siz isə departamentinin adı satış olan 
+və maaşı 600-dən çox olan şəxslərin maaşını azalan sıra ilə sıralıyın
+
+
+--CREATE TABLE Isciler( isci_ad VARCHAR2(20), isci_maas INTEGER, isci_department VARCHAR2(25) );
+
+--INSERT INTO Isciler values('Hesen',700,'Satis');
+--INSERT INTO Isciler values('Eli',1400,'Temir');
+--INSERT INTO Isciler values('Ramal',900,'Muhasib');
+--INSERT INTO Isciler values('Kamal',850,'Anbardar');
+--INSERT INTO Isciler values('Kazim',780,'Satis');
+
+--SELECT * FROM Isciler WHERE isci_department ='Satis' AND isci_maas > 600 ORDER BY isci_maas  DESC;
