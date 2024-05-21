@@ -59,4 +59,9 @@ ratingi 7-dən böyük olanları azalan sıra ilə sıralıyın.
 --INSERT INTO Filmler VALUES('The Dune:Part Two',2024, 8.6);
 --INSERT INTO filmler2 VALUES('The Parasite',2019, 8.5);
 
+-- ?
 --SELECT * FROM Filmler WHERE film_cixis_tarix <2000 AND film_rating >7 ORDER BY film_cixis_tarix ASC, film_rating DESC
+
+-- ayri ayri olmalidi ?
+--SELECT * FROM Filmler WHERE film_cixis_tarix <2000 ORDER BY film_cixis_tarix ;
+--SELECT * FROM Filmler WHERE film_rating >7 ORDER BY  film_rating DESC;
