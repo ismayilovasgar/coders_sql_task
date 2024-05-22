@@ -60,6 +60,6 @@ ratingi 7-dən böyük olanları azalan sıra ilə sıralıyın.
 --INSERT INTO filmler2 VALUES('The Parasite',2019, 8.5);
 
 -- 
---SELECT * FROM Filmler WHERE film_cixis_tarix <2000 AND film_rating >7 ORDER BY film_cixis_tarix ASC, film_rating DESC
+--SELECT * FROM Filmler WHERE film_cixis_tarix <2000 AND film_rating >7 ORDER BY film_cixis_tarix ASC, film_rating DESC;
 --
 --SELECT film_cixis_tarix , film_rating FROM Filmler WHERE film_cixis_tarix < 2000 AND film_rating > 7  ORDER BY  film_cixis_tarix ASC, film_rating DESC;
